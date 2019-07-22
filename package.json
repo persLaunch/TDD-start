@@ -1,0 +1,33 @@
+{
+  "name": "tdd-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --names \"Typescript,Node.js\" -c \"blue,green\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "watch-ts": "tsc --watch",
+    "watch-node": "nodemon --require dotenv/config dist",
+    "test": "jest"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "concurrently": "^4.1.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/persLaunch/TDD-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/persLaunch/TDD-start/issues"
+  },
+  "homepage": "https://github.com/persLaunch/TDD-start#readme"
+}
