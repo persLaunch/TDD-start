@@ -20,7 +20,9 @@
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "tslint": "^5.18.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "sonarqube-scanner": "^2.5.0",
+    "jest-sonar-reporter": "^2.0.0"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,11 @@
   "bugs": {
     "url": "https://github.com/persLaunch/TDD-start/issues"
   },
-  "homepage": "https://github.com/persLaunch/TDD-start#readme"
+  "homepage": "https://github.com/persLaunch/TDD-start#readme",
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-reporter.xml",
+    "indent": 4,
+    "sonar56x": true
+  }
 }

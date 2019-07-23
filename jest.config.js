@@ -1,6 +1,5 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-
 module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -18,10 +17,10 @@ module.exports = {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  collectCoverageFrom: ["dist/**"],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: "coverage",
@@ -152,7 +151,7 @@ module.exports = {
   // testRegex: [],
 
   // This option allows the use of a custom results processor
-  // testResultsProcessor: null,
+  testResultsProcessor: "jest-sonar-reporter",
 
   // This option allows use of a custom test runner
   // testRunner: "jasmine2",
